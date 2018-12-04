@@ -1,0 +1,35 @@
+To create a table
+-----------------
+CREATE TABLE employee (id number(5), name varchar2(30), salary number(5,2), doj Date);
+
+To display table structure
+--------------------------
+desc employee;
+
+To display table records
+------------------------
+SELECT * FROM employee;
+
+Insert into table
+-----------------
+INSERT INTO employee values(101, 'Mukesh', 21000, '19-SEP-2018');
+
+
+Inserting multiple records at a time
+------------------------------------
+INSERT INTO employee values(&id, &name, &salary, &doj);
+
+Insert only specific columns
+----------------------------
+INSERT INTO employee(id, name, salary)values(106,'hatds',323.98);
+
+copy from one table to another table
+-------------------------------------
+INSERT INTO emp SELECT * FROM employee;
+
+
+
+CREATE TABLE products (id number(3), name varchar2(30), price number(5,2), mfg_date Date);
+desc products;
+
+
