@@ -1,0 +1,21 @@
+Abstract :
+ 
+abstract class Bike{  
+      abstract void run(); 
+      void brake() {
+           System.out.println("Testing the braking");
+      }
+      static void speed(){
+           System.out.println("Testing the speed");
+      }
+    }  
+    class Abstract1 extends Bike{  
+    void run(){
+         System.out.println("running safely");
+         }  
+    public static void main(String args[]){  
+    Bike obj = new Abstract1();  
+    obj.run();  obj.brake();
+    Abstract1.speed();
+    }  
+    }  
